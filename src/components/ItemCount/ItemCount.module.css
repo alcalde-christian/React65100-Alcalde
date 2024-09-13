@@ -1,0 +1,10 @@
+.counter {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+    .controls {
+        display: flex;
+        justify-content: space-evenly;
+    }
