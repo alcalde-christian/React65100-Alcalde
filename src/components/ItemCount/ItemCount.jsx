@@ -11,30 +11,28 @@ const ItemCount = ({ initial, stock, onAdd }) => {
         <div className={styles.counter}>
             <div className={styles.controls}>
                 <button 
-                    className="button"
+                    className={styles.button}
                     onClick={decrement}
                 >
                     -
                 </button>
-                <p className="number">
+                <p>
                     {qty}
                 </p>
                 <button 
-                    className="button"
+                    className={styles.button}
                     onClick={increment}
                 >
                     +
                 </button>
             </div>
-            <div>
-                <button 
-                    className="button"
-                    onClick={() => onAdd(qty)}
-                    disabled={!stock}
-                >
-                    Agregar al carrito
-                </button>
-            </div>
+            <button 
+                className={styles.addButton}
+                onClick={() => onAdd(qty)}
+                disabled={!stock}
+            >
+                Agregar al carrito
+            </button>
         </div>
     )
 }

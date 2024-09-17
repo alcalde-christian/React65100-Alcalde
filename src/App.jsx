@@ -1,14 +1,21 @@
-import './App.css'
 import NavBar from './components/NavBar/NavBar'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
-import ItemCount from './components/ItemCount/ItemCount'
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <ItemListContainer greeting={"Sitio en construcción"}/>
-      <ItemCount initial={1} stock={10} onAdd={(qty) => console.log("Cantidad agregada ", qty)}/>
+      <BrowserRouter>
+        <NavBar />
+
+        <Routes>
+          <Route path="/" element={ <ItemListContainer greeting={"Sitio en construcción"}/> }/>
+          <Route path="/category/:id" element={ <ItemListContainer greeting={"Sitio en construcción"}/> }/>
+          <Route path="/product/:id" element={ <ItemDetailContainer /> }/>
+          <Route path="*" element={ <h1>Error 404: Página no encontrada</h1> }/>
+        </Routes>
+      </BrowserRouter>
     </div>
   )
 }
