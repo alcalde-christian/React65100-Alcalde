@@ -23,7 +23,7 @@ const ItemDetailContainer = () => {
 
     return(
         <div className={styles.itemDetailContainer}>
-            <ItemDetail {...item}/>
+            <ItemDetail item={item}/>
         </div>
     )
 }

@@ -1,30 +1,30 @@
 import ItemCount from "../ItemCount/ItemCount"
 import styles from "./ItemDetail.module.css"
 
-const ItemDetail = ({ name, img, screen, ram, storage, camera, price }) => {
+const ItemDetail = ({ item }) => {
     return(
         <>
-            <img className={styles.img} src={img}/>
+            <img className={styles.img} src={item.img}/>
             <div className={styles.featuresContainer}>
                 <p>
-                    Producto: {name}
+                    Producto: {item.name}
                 </p>
                 <p>
-                    Pantalla: {screen}
+                    Pantalla: {item.screen}
                 </p>
                 <p>
-                    Memoria RAM: {ram}
+                    Memoria RAM: {item.ram}
                 </p>
                 <p>
-                    Almacenamiento: {storage}
+                    Almacenamiento: {item.storage}
                 </p>
                 <p>
-                    Cámaras: {camera}
+                    Cámaras: {item.camera}
                 </p>
                 <p>
-                    Precio: $ {price}
+                    Precio: $ {item.price}
                 </p>
-                <ItemCount initial={1} stock={10} onAdd={(qty) => console.log("Cantidad agregada ", qty)}/>
+                <ItemCount initial={1} stock={10} item={item} />
             </div>
         </>
     )

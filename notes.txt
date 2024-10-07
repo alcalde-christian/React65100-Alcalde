@@ -1,0 +1,36 @@
+-------------------------------------------------------------------------------
+PENDIENTES
+-------------------------------------------------------------------------------
+
+Cart:
+    (OK) Agregar elementos al carrito
+    (OK) Mostrar el total de elementos en el carrito
+    (OK) Evitar duplicados de elementos en el carrito
+    (OK) Actualizar la cantidad en caso de agregar el mismo elemento
+    Controlar stocks
+    Implementar SweetAlert
+    Test
+
+PostImages:
+    Al 07/10 las imágenes no están mostrándose
+
+Firebase:
+    Mudar base de datos a Firebase
+    Deprecar la API y utilizar Firebase
+    POST de órdenes de compra
+
+Readme.md:
+    Actualizar archivo
+
+General:
+    Chequear código sin usar
+    Eliminar console.log y alert
+    Recordar volver al home al finalizar la compra
+    Implementar SweetAlert donde se considere necesario (opcional)
+    Implementar spinner de carga (opcional)
+    Test
+
+Componentes:
+    Eliminar "sitio en construcción" en ItemListContainer
+    Crear DisplayCart
+    Crear Checkout
