@@ -7,17 +7,18 @@ Cart:
     (OK) Mostrar el total de elementos en el carrito
     (OK) Evitar duplicados de elementos en el carrito
     (OK) Actualizar la cantidad en caso de agregar el mismo elemento
-    Controlar stocks
+    (OK) Controlar stocks
     Implementar SweetAlert
     Test
 
 PostImages:
-    Al 07/10 las imágenes no están mostrándose
+    (OK) Al 07/10 las imágenes no están mostrándose
 
 Firebase:
-    Mudar base de datos a Firebase
-    Deprecar la API y utilizar Firebase
+    (OK) Mudar base de datos a Firebase
+    (OK) Deprecar la API y utilizar Firebase
     POST de órdenes de compra
+    Manejo de errores de carga de datos con SweetAlert
 
 Readme.md:
     Actualizar archivo
@@ -31,6 +32,10 @@ General:
     Test
 
 Componentes:
-    Eliminar "sitio en construcción" en ItemListContainer
-    Crear DisplayCart
-    Crear Checkout
+    (OK) Eliminar "sitio en construcción" en ItemListContainer
+    (OK) Crear Cart
+    (OK) Crear Checkout
+    Separar NavBar de ItemListContainer
+    Diseñar Cart
+    Diseñar Checkout
+    Ver Details en Accesories

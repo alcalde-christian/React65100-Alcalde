@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import { useParams } from "react-router-dom"
+import { getOneProduct } from "../../firebase/db"
 import ItemDetail from "../ItemDetail/ItemDetail"
 import styles from "./ItemDetailContainer.module.css"
 
@@ -8,17 +9,7 @@ const ItemDetailContainer = () => {
     const { id } = useParams()
 
     useEffect(() => {
-        const fetchProducts = async () => {
-            try {
-                const response = await fetch(`https://66e1f943c831c8811b56de6f.mockapi.io/api/products/${id}`)
-                const data = await response.json()
-                setItem(data)
-            } catch (error) {
-                console.error(error.message)
-            }
-        }
-        
-        fetchProducts()
+        getOneProduct(id, setItem)
     }, [id])
 
     return(

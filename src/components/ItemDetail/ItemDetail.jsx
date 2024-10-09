@@ -24,7 +24,7 @@ const ItemDetail = ({ item }) => {
                 <p>
                     Precio: $ {item.price}
                 </p>
-                <ItemCount initial={1} stock={10} item={item} />
+                <ItemCount initial={1} stock={item.stock} item={item} />
             </div>
         </>
     )
