@@ -35,7 +35,7 @@ Componentes:
     (OK) Eliminar "sitio en construcción" en ItemListContainer
     (OK) Crear Cart
     (OK) Crear Checkout
-    Separar NavBar de ItemListContainer
-    Diseñar Cart
+    (OK) Separar NavBar de ItemListContainer
+    (OK) Diseñar Cart
     Diseñar Checkout
     Ver Details en Accesories

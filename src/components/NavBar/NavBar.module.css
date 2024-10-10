@@ -47,3 +47,8 @@
             outline: solid 1px var(--primary-color);
             
         }
+
+    .cartWidget {
+        text-decoration: none;
+        color: var(--font-color);
+    }

@@ -53,7 +53,7 @@ export const getOneProduct = async (id, setProduct) => {
         setProduct(docSnap.data())
     } else {
         // Incorporar mensaje aquí
-        console.log("No such document!");
+        console.log("No such document!")
     }
 
 }
