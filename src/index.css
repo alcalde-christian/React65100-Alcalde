@@ -18,3 +18,16 @@ body {
   background-color: var(--background-color);
 }
 
+.swalTitle {
+  color: var(--font-color);
+}
+
+.swalConfirmButton {
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+  color: var(--font-color);
+}
+
+.swalText {
+  color: var(--font-color) !important;
+}

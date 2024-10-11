@@ -3,14 +3,29 @@ import { useParams } from "react-router-dom"
 import { getProducts, getProductsByCategory } from "../../firebase/db"
 import ItemList from "../ItemList/ItemList"
 import styles from "./ItemListContainer.module.css"
+import Spinner from "../Spinner/Spinner"
 
-const ItemListContainer = ({ greeting }) => {
+const ItemListContainer = () => {
     const [items, setItems] = useState([])
+    const [loading, setLoading] = useState(true)
     const { id } = useParams()
 
     useEffect(() => {
-        id ? getProductsByCategory(id, setItems) : getProducts(setItems)
+        const fetchData = async () => {
+            if (id) {
+                await getProductsByCategory(id, setItems)
+            } else {
+                await getProducts(setItems)
+            }
+            setLoading(false)
+        }
+
+        fetchData()
     }, [id])
+
+    if (loading) {
+        return <Spinner />
+    }
 
     return (
         <>

@@ -3,15 +3,7 @@ import styles from "./CartWidget.module.css"
 import { useCartContext } from "../../context/cartContext"
 
 const CartWidget = () => {
-    const { cart } = useCartContext()
-
-    const cartTotalizer = () => {
-        let cartTotal = 0
-        cart.forEach(el => {
-            cartTotal += el.qty
-        });
-        return cartTotal
-    }
+    const { cartTotalizer } = useCartContext()
 
     return (
         <div className={styles.cartWidget}>

@@ -3,12 +3,7 @@ import { Link } from "react-router-dom"
 import  styles  from "./Cart.module.css"
 
 const Cart = () => {
-    const { cart, removeFromCart } = useCartContext()
-    let totalPrice = 0
-
-    cart.forEach(el => {
-        totalPrice += el.price * el.qty
-    });
+    const { cart, removeFromCart, calculateTotal } = useCartContext()
 
     return(
         <>
@@ -38,7 +33,7 @@ const Cart = () => {
                             ))}
                         </div>
                         <p className={styles.cartTotal}>
-                            Total de la compra: ${totalPrice}
+                            Total de la compra: ${calculateTotal()}
                         </p>
                     </>
                 ) 

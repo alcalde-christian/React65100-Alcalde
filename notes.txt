@@ -8,8 +8,8 @@ Cart:
     (OK) Evitar duplicados de elementos en el carrito
     (OK) Actualizar la cantidad en caso de agregar el mismo elemento
     (OK) Controlar stocks
-    Implementar SweetAlert
-    Test
+    (OK) Implementar SweetAlert
+    (OK) Test
 
 PostImages:
     (OK) Al 07/10 las imágenes no están mostrándose
@@ -17,18 +17,18 @@ PostImages:
 Firebase:
     (OK) Mudar base de datos a Firebase
     (OK) Deprecar la API y utilizar Firebase
-    POST de órdenes de compra
-    Manejo de errores de carga de datos con SweetAlert
+    (OK) POST de órdenes de compra
+    (OK) Manejo de errores de carga de datos con SweetAlert
 
 Readme.md:
     Actualizar archivo
 
 General:
-    Chequear código sin usar
-    Eliminar console.log y alert
-    Recordar volver al home al finalizar la compra
-    Implementar SweetAlert donde se considere necesario (opcional)
-    Implementar spinner de carga (opcional)
+    (/\) Chequear código sin usar
+    (OK) Eliminar console.log y alert
+    (OK) Recordar volver al home al finalizar la compra
+    (OK) Implementar SweetAlert donde se considere necesario (opcional)
+    (--) Implementar spinner de carga (opcional)
     Test
 
 Componentes:
@@ -37,5 +37,6 @@ Componentes:
     (OK) Crear Checkout
     (OK) Separar NavBar de ItemListContainer
     (OK) Diseñar Cart
-    Diseñar Checkout
-    Ver Details en Accesories
+    (OK) Diseñar Checkout
+    (/\) Ver Details en Accesories
+    (OK) Centrar NavBar

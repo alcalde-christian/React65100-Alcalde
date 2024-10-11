@@ -10,16 +10,17 @@ const ItemDetail = ({ item }) => {
                     Producto: {item.name}
                 </p>
                 <p>
-                    Pantalla: {item.screen}
+                    {item.screen ? `Pantalla: ${item.screen}` : ""}
                 </p>
                 <p>
-                    Memoria RAM: {item.ram}
+                    {item.ram ? `Memoria RAM: ${item.ram}` : ""}
                 </p>
                 <p>
-                    Almacenamiento: {item.storage}
+                    {item.storage ? `Memoria RAM: ${item.storage}` : ""}
                 </p>
                 <p>
-                    Cámaras: {item.camera}
+                    {item.camera ? `Memoria RAM: ${item.camera}` : ""}
+
                 </p>
                 <p>
                     Precio: $ {item.price}
